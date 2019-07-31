@@ -9,9 +9,9 @@ try {
 try {
   fs.promises
     .stat(path)
-    .then("fs.promises .then")
-    .catch("fs.promises .catch")
-    .finally("fs.promises .finally");
+    .then(() => console.log("fs.promises .then"))
+    .catch(() => console.log("fs.promises .catch"))
+    .finally(() => console.log("fs.promises .finally"));
 } catch {
   console.log("fs.promises catch");
 }
