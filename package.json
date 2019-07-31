@@ -1,0 +1,22 @@
+{
+  "name": "electron-issue-19554",
+  "version": "1.0.0",
+  "description": "Reproduces issue 19554 in the electron repo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/tyleo/electron-issue-19554",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^6.0.0"
+  }
+}
