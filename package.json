@@ -1,5 +1,5 @@
 {
-  "name": "Devev",
+  "name": "issue-19554",
   "private": true,
   "workspaces": {
     "packages": [
@@ -20,14 +20,9 @@
     "typescript": "^3.4.3"
   },
   "scripts": {
-    "build:dev": "yarn workspace DevevComFrontend build:dev yarn workspace DevevEditor build:dev",
     "clean": "yarn lerna run --parallel clean & yarn clean:root",
     "clean:node_modules": "lerna run --parallel clean:node_modules & yarn clean:root",
     "clean:root": "rimraf node_modules",
-    "clean:target": "lerna run --parallel clean:target",
-    "format:prettier": "lerna exec --no-bail --parallel prettier -- --write \"ts/**/*.{ts,tsx}\"",
-    "format:eslint": "lerna exec --no-bail eslint -- ./ts/**/*.{ts,tsx} --fix",
-    "lint": "lerna run --parallel lint",
-    "ttsc:all": "yarn ttsc -b"
+    "clean:target": "lerna run --parallel clean:target"
   }
 }
