@@ -1,6 +1,14 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "downlevelIteration": true,
+    "composite": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "target": "es2015",
     "module": "commonjs",
     "baseUrl": ".",
     "paths": {
@@ -10,5 +18,5 @@
     "outDir": "./target/ts",
     "tsBuildInfoFile": "./target/ts/tsconfig.tsbuildinfo"
   },
-  "include": ["./ts/**/*.ts", "./ts/**/*.tsx"]
+  "include": ["./ts/**/*.ts"]
 }
