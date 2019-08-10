@@ -1,22 +1,33 @@
 {
-  "name": "electron-issue-19554",
-  "version": "1.0.0",
-  "description": "Reproduces issue 19554 in the electron repo",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
+  "name": "Devev",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/Broken"
+    ]
   },
-  "repository": "https://github.com/tyleo/electron-issue-19554",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^6.0.0"
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^5.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "lerna": "^3.13.2",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3",
+    "ts-transform-paths": "^2.0.0",
+    "ts-node": "^8.0.2",
+    "ttypescript": "^1.5.6",
+    "typescript": "^3.4.3"
+  },
+  "scripts": {
+    "build:dev": "yarn workspace DevevComFrontend build:dev yarn workspace DevevEditor build:dev",
+    "clean": "yarn lerna run --parallel clean & yarn clean:root",
+    "clean:node_modules": "lerna run --parallel clean:node_modules & yarn clean:root",
+    "clean:root": "rimraf node_modules",
+    "clean:target": "lerna run --parallel clean:target",
+    "format:prettier": "lerna exec --no-bail --parallel prettier -- --write \"ts/**/*.{ts,tsx}\"",
+    "format:eslint": "lerna exec --no-bail eslint -- ./ts/**/*.{ts,tsx} --fix",
+    "lint": "lerna run --parallel lint",
+    "ttsc:all": "yarn ttsc -b"
   }
 }
