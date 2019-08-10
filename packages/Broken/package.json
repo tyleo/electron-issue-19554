@@ -14,12 +14,10 @@
     "rimraf": "^2.6.3"
   },
   "scripts": {
-    "build": "ttsc -b",
+    "build": "tsc -b",
     "clean": "yarn clean:node_modules & yarn clean:target",
     "clean:node_modules": "rimraf node_modules",
-    "clean:target": "rimraf target",
-    "lint": "eslint ts/**",
-    "watch": "ttsc -b --w"
+    "clean:target": "rimraf target"
   },
   "sideEffects": true
 }
