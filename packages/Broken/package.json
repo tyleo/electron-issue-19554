@@ -5,7 +5,9 @@
   "author": "Tyler Wolf Leonhardt",
   "main": "./target/ts/main.js",
   "devDependencies": {
-    "electron": "^5.0.0"
+    "electron": "^5.0.0",
+    "lerna": "^3.13.2",
+    "typescript": "^3.4.3"
   },
   "dependencies": {
     "rimraf": "^2.6.3"
