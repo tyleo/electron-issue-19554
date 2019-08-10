@@ -1,7 +1,7 @@
 {
   "name": "issue-19554",
   "private": true,
-  "main": "target/ts/main.js",
+  "main": "target/main.js",
   "devDependencies": {
     "electron": "^5.0.0",
     "lerna": "^3.13.2",

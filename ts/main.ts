@@ -7,9 +7,8 @@ Electron.app.on("ready", () => {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true,
-    },
+      nodeIntegration: true
+    }
   });
-  mainWindow.loadURL(`file://${__dirname}/../../html/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/../index.html`);
 });
-//
