@@ -1,9 +1,9 @@
-import * as Electron from "electron";
+import * as electron from "electron";
 
-let mainWindow: Electron.BrowserWindow;
+let mainWindow: electron.BrowserWindow;
 
-Electron.app.on("ready", () => {
-  mainWindow = new Electron.BrowserWindow({
+electron.app.on("ready", () => {
+  mainWindow = new electron.BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
