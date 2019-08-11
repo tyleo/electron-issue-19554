@@ -1,19 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const electron = require("electron");
 const fs = require("fs");
 const path = `${__dirname}/TestFile.txt`;
 const run = async () => {
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
-  await fs.promises.stat(path);
+  for (let i = 0; i < 10; ++i) await fs.promises.stat(path);
 };
 // eslint-disable-next-line no-console
 console.log("before");

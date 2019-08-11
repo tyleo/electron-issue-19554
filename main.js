@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const electron = require("electron");
 let mainWindow;
 electron.app.on("ready", () => {
