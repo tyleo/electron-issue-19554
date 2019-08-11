@@ -1,13 +1,13 @@
 {
   "name": "issue-19554",
   "private": true,
-  "main": "target/main.js",
+  "main": "main.js",
   "devDependencies": {
     "electron": "^5.0.0",
     "touch": "^3.1.0"
   },
   "scripts": {
-    "build": "yarn nodetouch ./target/main.js && yarn nodetouch ./target/renderer.js",
+    "build": "yarn nodetouch main.js && yarn nodetouch renderer.js",
     "start": "electron .",
     "build+start": "yarn build && yarn start"
   }
