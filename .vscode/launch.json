@@ -16,7 +16,6 @@
       "windows": {
         "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
       },
-      "sourceMaps": true,
       "outputCapture": "std",
       "preLaunchTask": "npm: build"
     },
@@ -26,8 +25,7 @@
       "name": "Broken: Renderer Attach",
       "port": 9223,
       "webRoot": "${workspaceFolder}",
-      "timeout": 30000,
-      "sourceMaps": true
+      "timeout": 30000
     }
   ],
   "compounds": [

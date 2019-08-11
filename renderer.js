@@ -1,6 +1,6 @@
 const electron = require("electron");
 const fs = require("fs");
-const path = `${__dirname}/TestFile.txt`;
+const path = `${__dirname}/test.txt`;
 const run = async () => {
   for (let i = 0; i < 10; ++i) await fs.promises.stat(path);
 };
