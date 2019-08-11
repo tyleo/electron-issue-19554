@@ -9,6 +9,8 @@
   "scripts": {
     "build": "yarn nodetouch main.js && yarn nodetouch renderer.js",
     "start": "electron .",
-    "build+start": "yarn build && yarn start"
+    "debug": "electron --preserve-symlinks --remote-debugging-port=9223 .",
+    "build+start": "yarn build && yarn start",
+    "build+debug": "yarn build && yarn debug"
   }
 }
