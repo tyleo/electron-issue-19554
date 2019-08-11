@@ -4,10 +4,10 @@
   "main": "target/main.js",
   "devDependencies": {
     "electron": "^5.0.0",
-    "typescript": "^3.4.3"
+    "touch": "^3.1.0"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "yarn nodetouch ./target/main.js && yarn nodetouch ./target/renderer.js",
     "start": "electron .",
     "build+start": "yarn build && yarn start"
   }
