@@ -3,7 +3,7 @@
   "private": true,
   "main": "main.js",
   "devDependencies": {
-    "electron": "^5.0.0",
+    "electron": "^13.6.6",
     "touch": "^3.1.0"
   },
   "scripts": {
